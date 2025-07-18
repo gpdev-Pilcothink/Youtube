@@ -2,7 +2,7 @@
   "id": "8586f07f-a162-4977-a95c-7dafb78b63a5",
   "revision": 0,
   "last_node_id": 27,
-  "last_link_id": 37,
+  "last_link_id": 39,
   "nodes": [
     {
       "id": 1,
@@ -16,7 +16,7 @@
         46
       ],
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -156,7 +156,7 @@
         875.3333129882812
       ],
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -186,7 +186,7 @@
         106
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -330,7 +330,8 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            15
+            38,
+            39
           ]
         }
       ],
@@ -347,47 +348,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 22,
-      "type": "LoraLoaderModelOnly",
-      "pos": [
-        39.73093032836914,
-        167.94277954101562
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 15
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            34,
-            35
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.44",
-        "Node name for S&R": "LoraLoaderModelOnly"
-      },
-      "widgets_values": [
-        "Flux\\korean_realism_v1_flux.safetensors",
-        0.7000000000000002
-      ]
-    },
-    {
       "id": 25,
       "type": "ModelSamplingFlux",
       "pos": [
@@ -399,14 +359,14 @@
         130
       ],
       "flags": {},
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
           "label": "model",
           "name": "model",
           "type": "MODEL",
-          "link": 35
+          "link": 39
         },
         {
           "label": "width",
@@ -460,13 +420,13 @@
         262
       ],
       "flags": {},
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 34
+          "link": 38
         },
         {
           "name": "positive",
@@ -602,7 +562,7 @@
         58
       ],
       "flags": {},
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -670,8 +630,8 @@
       "id": 27,
       "type": "CLIPTextEncode",
       "pos": [
-        42.70317077636719,
-        306.0738525390625
+        35.4962272644043,
+        194.36590576171875
       ],
       "size": [
         400,
@@ -703,7 +663,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "A full-body, photorealistic rendering of a female archmage floating gracefully in a pristine winter forest at dawn. The camera is positioned at a subtle low-angle perspective to highlight her commanding presence, capturing her from the polished black Mary Jane shoes and thigh-high white stockings up through the intricate layers of her ensemble to the top of her headband. Her long, ice-blue hair is rendered strand by strand, catching the soft, diffused golden-pink morning light filtering through frost-tipped pine branches. Every individual hair reflects a delicate gradient from silvery blue roots to frosty tips. Her porcelain skin exhibits natural pores, a gentle rosy flush on her cheeks, and a subtle cool sheen where the icy atmosphere touches her skin. Her eyes, a pair of crystalline gray orbs, sparkle with specular highlights as she gazes confidently forward. She wears a white winter robe with pale blue geometric embroidery on the wide sleeves, cinched at the waist by a black corset adorned with glossy leather lacing and matte metal eyelets, over a black skirt patterned with diamond motifs. In her right hand, she conjures floating translucent sapphire-blue ice shards with realistic frost texture, each shard refracting light with photoreal clarity. In her left hand, an ancient dark-purple grimoire hovers, bound in weathered leather with ornate gold filigree and a faceted blue gemstone at its center; its pages, edged in crimson, flutter in a magical breeze. Light snowflakes drift gently around her, and the shallow depth of field softly blurs the forest background, creating a crisp focus on the mage and her mystical artifacts. Lens: 85mm f/1.4, cinematic color grading emphasizing cool tones and soft highlights.\n"
+        ""
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -775,14 +735,6 @@
       "CONDITIONING"
     ],
     [
-      15,
-      21,
-      0,
-      22,
-      0,
-      "MODEL"
-    ],
-    [
       22,
       15,
       0,
@@ -815,22 +767,6 @@
       "CLIP"
     ],
     [
-      34,
-      22,
-      0,
-      26,
-      0,
-      "MODEL"
-    ],
-    [
-      35,
-      22,
-      0,
-      25,
-      0,
-      "MODEL"
-    ],
-    [
       36,
       12,
       0,
@@ -845,6 +781,22 @@
       26,
       2,
       "CONDITIONING"
+    ],
+    [
+      38,
+      21,
+      0,
+      26,
+      0,
+      "MODEL"
+    ],
+    [
+      39,
+      21,
+      0,
+      25,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -904,10 +856,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0834705943388587,
+      "scale": 0.9849732675807812,
       "offset": [
-        423.761006741144,
-        -182.86207017636815
+        492.99420280337677,
+        59.28883414808888
       ]
     },
     "frontendVersion": "1.23.4",
